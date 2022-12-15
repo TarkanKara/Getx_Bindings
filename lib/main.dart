@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      initialRoute: Routes.HOME,
+      initialRoute: AppPages.INITIAL_SPLASH,
       enableLog: true,
       debugShowCheckedModeBanner: false,
       title: 'GetX',
