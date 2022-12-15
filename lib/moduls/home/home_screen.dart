@@ -9,11 +9,11 @@ class HomeScreen extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-          child: Text("Home Screen",
+          child: Text("${controller.data}",
               style: Theme.of(context)
                   .textTheme
                   .bodyText1!
-                  .copyWith(fontSize: 20))),
+                  .copyWith(fontSize: 30))),
     );
   }
 }
