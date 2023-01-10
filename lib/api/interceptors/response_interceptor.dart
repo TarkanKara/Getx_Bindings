@@ -1,7 +1,9 @@
+import 'dart:async';
+
 import 'package:get/get.dart';
 import 'package:get/get_connect/http/src/request/request.dart';
 
-Future<dynamic> responseInterceptor(Request request, Response response) async {
+FutureOr<dynamic> responseInterceptor(Request request, Response response) async {
   if (response.statusCode != 200) {
     handleErrorStatus(response);
 
