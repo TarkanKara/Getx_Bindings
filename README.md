@@ -1,16 +1,58 @@
-# solid_getxx
+# Getx with Firebase Folder Structure
 
-A new Flutter project.
+## Master Branch Directory Structure
+```
+📂lib
+ |
+ │───📂api 
+ |   │───📂interceptors
+ |   |   │───request_interceptor.dart
+ |   |   │───response_interceptor.dart
+ |   │───api_constant.dart
+ |   │───api_provider.dart
+ |   │───api_repository.dart
+ |   │───api.dart
+ |   │───base_provider.dart
+ |
+ │───📂app 
+ |   │───📂models
+ |   |   │───📂request
+ |   |   |   │───request.model.dart
+ |   |   │───📂response
+ |   |   |   │───response_model.dart
+ |   |   
+ |   │───📂modules
+ |   |   │───📂home
+ |   |   |   │───home_binding.dart
+ |   |   |   │───home_controller.dart
+ |   |   |   │───home_screen.dart
+ |   |   │───📂splash
+ |   |   |   │───splash_binding.dart
+ |   |   |   │───splash_controller.dart
+ |   |   |   │───splash_screen.dart
+ |   |
+ |   │───📂widgets
+ |   |   │───widgets.dart
+ |   |
+ |   │───📂routes
+ |   |   │───app_pages.dart
+ |   |   │───app_routes.dart
+ |   |   │───routes.dart 
+ |   |
+ │───📂shared
+ |   │───📂services 
+ |   |   │───firebase_service.dart
+ |   
+ │───📂utils
+ |   │───const.dart
+ |
+ │───app_binding.dart
+ |
+ │───di.dart
+ |
+ │───firebase_options.dart
+ |
+ │───main.dart 
+ |
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
